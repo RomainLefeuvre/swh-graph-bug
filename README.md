@@ -3,17 +3,18 @@
 0- download the swh graph dataset and update config file
 
 - download the swh graph dataset (s3://softwareheritage/graph/2022-04-25/compressed) you can use the
-  scripts/dl_script.sh
-- update the path in the config file
-  ```graphPath=/.../DATASET/python_data/graph-transposed```
+  ```scripts/dl_script.sh``` script
+- update the graph path in the config file if you did not use the script
 
-1- install swh-graph to local maven repo
+1- download and install swh-graph to local maven repo
 
-```mvn install:install-file -Dfile=./scripts/swh-graph-2.1.2.jar
--DgroupId=org.softwareheritage.graph -DartifactId=swh-graph -Dversion=2.1.2 -Dpackaging=jar
+```
+cd scripts
+sh install_swh-graph.sh
 ```
 
 2 - package  
+On project root :
 ```mvn clean package```
 
 3- run
