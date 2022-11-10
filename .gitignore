@@ -1,0 +1,11 @@
+/log/
+/.idea/
+/target/
+res.json
+/resWithSwhIds.json
+dependency-reduced-pom.xml
+/origins.json
+/originsFiltered.json
+/finalResult.json
+/export/
+/dataset/
